@@ -7,8 +7,8 @@ public class CarController {
 
         for (int i = 0; i < cars.length - 1; i++) {
             for (int j = 0; j < cars.length - 1 - i; j++) {
-                if (cars[j].getName().toLowerCase()
-                        .compareTo(cars[j + 1].getName().toLowerCase()) < 0) {
+                if (cars[j].getBrand().toLowerCase()
+                        .compareTo(cars[j + 1].getBrand().toLowerCase()) < 0) {
 
                     Car temp = cars[j];
                     cars[j] = cars[j + 1];

@@ -3,30 +3,34 @@ package models;
 public class Car {
   private String name;
   private int year;
-  public String getName() {
+
+  public String getBrand() {
     return name;
   }
-  public void setName(String name) {
+
+  public void getBrand(String name) {
     this.name = name;
   }
+
   public int getYear() {
     return year;
   }
+
   public void setYear(int year) {
     this.year = year;
   }
+
   @Override
   public String toString() {
     return "Car [name=" + name + ", year=" + year + "]";
   }
 
-  
   public Car() {
   }
+
   public Car(String name, int year) {
     this.name = name;
     this.year = year;
   }
-  
-  
+
 }
