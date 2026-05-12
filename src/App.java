@@ -5,8 +5,8 @@ public class App {
     public static void main(String[] args) throws Exception {
         CarController controller = new CarController();
         Car[] cars = makeCarsList();
-        controller.sortByName(cars);
-        for(Car car : cars)
+        controller.sortByBrand(cars);
+        for (Car car : cars)
             System.out.println(car);
 
     }
